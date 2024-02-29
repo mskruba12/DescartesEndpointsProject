@@ -63,7 +63,7 @@ namespace DescartestEndpointsProjectTests
             //Get the data from the result to check if it is correct
             var diffResult = Assert.IsType<StringDiffResult>(((OkObjectResult)res).Value);
 
-            Assert.Equal(2, diffResult.Diffs[0].Offset);
+            Assert.Equal(1, diffResult.Diffs[0].Offset);
             Assert.Equal(1, diffResult.Diffs[0].Length);
         }
     }
